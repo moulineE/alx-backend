@@ -68,5 +68,5 @@ class Server:
             "index": index,
             "data": data,
             "page_size": page_size,
-            "next_index": (index + page_size)
+            "next_index": (index + x)
         }
