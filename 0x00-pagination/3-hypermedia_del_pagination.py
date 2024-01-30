@@ -40,11 +40,11 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-            """
-            a method that return a dict
-            :param index:
-            :param page_size:
-            :return:
-            """
-            index_dataset = self.indexed_dataset()
-            pass
+        """
+        method that return a dict
+        :param index:
+        :param page_size:
+        :return:
+        """
+        index_dataset = self.indexed_dataset()
+        pass
