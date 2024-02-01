@@ -6,6 +6,7 @@ from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
+    """a class that inherits from BaseCaching and is a caching system"""
     def __init__(self):
         super().__init__()
         self.keys = []
