@@ -15,7 +15,7 @@ class LRUCache(BaseCaching):
     def put(self, key, item):
         """
         a class that inherits from BaseCaching and is a caching system
-        implementing a FIFO algorithm
+        implementing a LRU algorithm
         """
         if key and item:
             if key in self.keys.keys():
