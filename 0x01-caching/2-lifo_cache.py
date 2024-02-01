@@ -22,7 +22,6 @@ class LIFOCache(BaseCaching):
                 self.cache_data[key] = item
                 del self.keys[index]
                 self.keys.append(key)
-                print(self.keys)
             else:
                 if len(self.keys) > self.MAX_ITEMS - 1:
                     del self.cache_data[self.keys[-1]]
@@ -30,11 +29,9 @@ class LIFOCache(BaseCaching):
                     self.keys = self.keys[:-1]
                     self.keys.append(key)
                     self.cache_data[key] = item
-                    print(self.keys)
                 else:
                     self.keys.append(key)
                     self.cache_data[key] = item
-                    print(self.keys)
 
     def get(self, key):
         """return the value in self.cache_data linked to key"""
