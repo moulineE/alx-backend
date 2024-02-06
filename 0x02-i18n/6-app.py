@@ -59,7 +59,7 @@ def before_request() -> None:
 @app.route('/')
 def hello_world():
     """render 5-index.html"""
-    return render_template('5-index.html')
+    return render_template('6-index.html')
 
 
 if __name__ == '__main__':
